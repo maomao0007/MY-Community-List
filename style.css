@@ -1,0 +1,64 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.card {
+  border-radius: 20px;
+}
+.card:hover {
+box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* 
+.heart {
+  font-size: 20px;
+  color: #cccccc;
+  top: 20px;
+  right: 20px;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}*/
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  20%, 40% {
+    transform: scale(1.2);
+  }
+  60%, 80% {
+    transform: scale(0.8);
+  }
+}
+
+ /*添加震動效果的動畫*/ 
+.heartbeat {
+  animation: heartbeat 0.2s ; /* Run the animation*/
+}
+
+.name-gender {
+display: flex;
+justify-content: space-between;
+}
+
+
+.container-fluid {
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  animation: border-color 8s infinite; /* Run the animation*/
+}
+
+@keyframes border-color {
+  0% {
+  border-color:lightblue;
+  } 33% {
+  border-color:yellow;
+  } 66% {
+  border-color:limegreen;
+  }
+}
